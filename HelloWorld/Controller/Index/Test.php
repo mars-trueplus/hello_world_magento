@@ -16,7 +16,9 @@ class Test extends \Magento\Framework\App\Action\Action
 
     public function execute()
     {
-        echo "Hello Babe";
+        $textDisplay = new \Magento\Framework\DataObject(array('text' => 'Rat la ao dieu'));
+        $this->_eventManager->dispatch('magestore_helloworld_display_text', ['mgs_text' => $textDisplay]);
+        echo $textDisplay->getText();
         exit;
     }
 }
