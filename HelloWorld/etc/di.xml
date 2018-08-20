@@ -15,4 +15,5 @@
     <type name="Magestore\HelloWorld\Controller\Index\Example">
         <plugin name="Magestore_HelloWorld_Plugin" type="Magestore\HelloWorld\Plugin\ExamplePlugin" sortOrder="10" disabled="false"/>
     </type>
+    <preference for="Magestore\HelloWorld\Api\PostManagementInterface" type="Magestore\HelloWorld\Model\PostManagement"/>
 </config>
