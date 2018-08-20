@@ -12,4 +12,7 @@
             <argument name="resourceModel" xsi:type="string">Magestore\HelloWorld\Model\ResourceModel\Post</argument>
         </arguments>
     </virtualType>
+    <type name="Magestore\HelloWorld\Controller\Index\Example">
+        <plugin name="Magestore_HelloWorld_Plugin" type="Magestore\HelloWorld\Plugin\ExamplePlugin" sortOrder="10" disabled="false"/>
+    </type>
 </config>
