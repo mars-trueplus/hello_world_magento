@@ -16,4 +16,8 @@
         <plugin name="Magestore_HelloWorld_Plugin" type="Magestore\HelloWorld\Plugin\ExamplePlugin" sortOrder="10" disabled="false"/>
     </type>
     <preference for="Magestore\HelloWorld\Api\PostManagementInterface" type="Magestore\HelloWorld\Model\PostManagement"/>
+
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="change_product" type="Magestore\HelloWorld\Plugin\Product" sortOrder="1" disabled="false"/>
+    </type>
 </config>
